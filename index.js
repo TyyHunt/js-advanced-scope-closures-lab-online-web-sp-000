@@ -15,4 +15,17 @@ function produceTipCalculator() {
   return function(tip) {
     return tip * .1
   }
+};
+
+function createDriver() {
+  
+  let driverId = 0;
+
+  class Driver {
+
+    constructor(name) {
+      this.name = name;
+      this.id = ++driverId;
+    }
+  }
 }
