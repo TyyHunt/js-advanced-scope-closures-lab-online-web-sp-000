@@ -1,11 +1,12 @@
 function produceDrivingRange(range) {
   return function(start, end) {
+    
     let tripDistance = (parseInt(end) - parseInt(end));
-    let total = (range - tripDistance);
+    let difference = (range - tripDistance);
     if (tripDistance <= range) {
       return `within range by ${tripDistance}`;
     } else {
-      return `${Math.abs(total)} blocks out of range.`
+      return `${Math.abs(difference)} blocks out of range.`
     }
   };
 };
