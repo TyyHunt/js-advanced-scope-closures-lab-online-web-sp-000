@@ -6,7 +6,7 @@ function produceDrivingRange(range) {
     if (tripDistance <= range) {
       return `within range by ${tripDistance}`;
     } else {
-      return `${Math.abs(difference)} blocks out of range.`
+      return `${Math.abs(difference)} blocks out of range`
     }
   };
 };
